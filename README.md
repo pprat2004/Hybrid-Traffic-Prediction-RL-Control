@@ -122,8 +122,3 @@ This project is licensed under the MIT License - see LICENSE file for details.
 - SUMO traffic simulation framework
 - TensorFlow and Keras deep learning libraries
 
-## 📧 Contact
-
-Your Name - your.email@example.com
-
-Project Link: [https://github.com/yourusername/Traffic-Signal-Control](https://github.com/yourusername/Traffic-Signal-Control)
