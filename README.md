@@ -106,9 +106,9 @@ If you use this code in your research, please cite:
 ```bibtex
 @software{hybrid_traffic_control,
   title = {Hybrid Traffic Prediction and Reinforcement Learning Control},
-  author = {Your Name},
+  author = {Pratham.R},
   year = {2026},
-  url = {https://github.com/yourusername/Traffic-Signal-Control}
+  url = {https://github.com/pprat2004/Traffic-Signal-Control}
 }
 ```
 
