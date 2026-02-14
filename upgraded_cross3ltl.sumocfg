@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="net.net.xml"/>
+        <route-files value="input_routes.rou.xml"/>
+    </input>
+
+    <processing>
+        <time-to-teleport value="-1"/>
+        <max-depart-delay value="900"/>
+        <waiting-time-memory value="1000"/>
+    </processing>
+    
+    <routing>
+        <device.rerouting.adaptation-steps value="180"/>
+        <device.rerouting.adaptation-interval value="10"/>
+    </routing>
+
+    <report>
+        <xml-validation value="never"/>
+        <duration-log.disable value="true"/>
+        <no-step-log value="true"/>
+        <no-warnings value="false"/>
+    </report>
+    
+    <gui_only>
+        <gui-settings-file value="gui-settings.xml"/>
+    </gui_only>
+
+</configuration>

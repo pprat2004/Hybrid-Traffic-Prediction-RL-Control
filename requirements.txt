@@ -1,0 +1,12 @@
+numpy>=1.21.0
+pandas>=1.3.0
+matplotlib>=3.4.0
+seaborn>=0.11.0
+tensorflow>=2.8.0
+keras>=2.8.0
+scikit-learn>=1.0.0
+h5py>=3.6.0
+plotly>=5.5.0
+
+# SUMO (install separately - see README)
+# traci and sumolib come with SUMO installation
