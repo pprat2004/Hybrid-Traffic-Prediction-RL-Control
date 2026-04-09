@@ -1,0 +1,49 @@
+# MLOps Configuration for Traffic Control Project
+
+project:
+  name: "hybrid-traffic-control"
+  description: "Emergency-Aware Hybrid LSTM-DQN Traffic Signal Control"
+  
+wandb:
+  entity: "your-username"  # Your W&B username
+  project: "traffic-control-hybrid"
+  
+hyperparameters:
+  # Agent hyperparameters
+  learning_rate: 0.0001
+  gamma: 0.95
+  epsilon_start: 1.0
+  epsilon_min: 0.01
+  epsilon_decay: 0.995
+  batch_size: 128
+  memory_size: 5000
+  emergency_memory_size: 2000
+  target_update_frequency: 100
+  
+  # LSTM hyperparameters
+  lstm_sequence_length: 30
+  lstm_hidden_units: [128, 64]
+  lstm_prediction_horizon: 10
+  
+  # Reward weights
+  weight_throughput: 0.30
+  weight_waiting: 0.25
+  weight_emergency: 0.35
+  weight_fairness: 0.10
+  emergency_penalty_multiplier: 100
+  
+  # Training
+  episodes: 150
+  emergency_rate: 0.05
+  save_interval: 50
+
+metrics:
+  primary:
+    - waiting_time
+    - emergency_response_time
+    - throughput
+  secondary:
+    - phase_changes
+    - loss
+    - epsilon
+    - emergency_count
